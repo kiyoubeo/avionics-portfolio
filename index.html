@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Young-beom | Avionics FW Engineer Portfolio</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans KR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; 
+        }
+        /* Animation utilities */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-blue-500">YB<span class="text-white">.Dev</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#skills" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                        <a href="#experience" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+            <h2 class="text-blue-400 font-medium tracking-wider mb-4 animate-pulse">EMBEDDED SYSTEM & AVIONICS ENGINEER</h2>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                고신뢰성 펌웨어,<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">우주를 향한 제어 기술</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                ISO 26262 기반의 기능 안전(Functional Safety) 설계 역량과 통신 시스템 통합 경험을 바탕으로,
+                대한민국 우주 산업의 비상을 위한 Avionics 솔루션을 제공합니다.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#experience" class="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
+                    View Projects
+                </a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-blue-500/30">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-up">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center">
+                        <span class="w-2 h-8 bg-blue-500 mr-4 rounded-sm"></span>
+                        About Me
+                    </h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        안녕하세요, <strong>김영범</strong>입니다. 전자공학 박사로서 통신 신호처리 이론부터 임베디드 시스템 구현까지 폭넓은 기술적 배경을 갖추고 있습니다.
+                    </p>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        지난 6년간 전장 부품 산업과 통신 장비 분야에서 <strong>고신뢰성 SW 개발</strong>과 <strong>시스템 통합(System Integration)</strong> 역량을 쌓아왔습니다. 특히 차량용 제어기 개발을 통해 습득한 기능 안전 프로세스는 극한의 환경인 우주 발사체 시스템 개발에 필수적인 자산입니다.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-slate-900 p-4 rounded-lg border border-slate-700">
+                            <i class="fas fa-microchip text-blue-400 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Firmware Expert</h3>
+                            <p class="text-sm text-slate-400">BSW, MCAL, RTOS</p>
+                        </div>
+                        <div class="bg-slate-900 p-4 rounded-lg border border-slate-700">
+                            <i class="fas fa-shield-alt text-blue-400 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Functional Safety</h3>
+                            <p class="text-sm text-slate-400">ISO 26262, MISRA-C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-2xl fade-in-up delay-200">
+                    <h3 class="text-xl font-bold mb-6 text-white border-b border-slate-700 pb-2">Profile Overview</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap mt-1 text-blue-500 w-8"></i>
+                            <div>
+                                <span class="block font-semibold text-white">Ph.D. in Electronic Engineering</span>
+                                <span class="text-slate-400 text-sm">부산 동아대학교 대학원 (2019 졸업)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-briefcase mt-1 text-blue-500 w-8"></i>
+                            <div>
+                                <span class="block font-semibold text-white">Total Career: 6 Years</span>
+                                <span class="text-slate-400 text-sm">Automotive & Wireless Communication</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket mt-1 text-blue-500 w-8"></i>
+                            <div>
+                                <span class="block font-semibold text-white">Goal</span>
+                                <span class="text-slate-400 text-sm">Launch Vehicle Avionics FW Development</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center fade-in-up">Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Language & Tools -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors fade-in-up">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400 mr-4">
+                            <i class="fas fa-code text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Languages & Tools</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm"><span>C / C++</span><span class="text-blue-400">Expert</span></div>
+                        <div class="w-full bg-slate-700 h-2 rounded-full"><div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div></div>
+                        
+                        <div class="flex justify-between text-sm mt-2"><span>Python / MATLAB</span><span class="text-blue-400">Advanced</span></div>
+                        <div class="w-full bg-slate-700 h-2 rounded-full"><div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div></div>
+
+                        <div class="flex justify-between text-sm mt-2"><span>C#</span><span class="text-blue-400">Intermediate</span></div>
+                        <div class="w-full bg-slate-700 h-2 rounded-full"><div class="bg-blue-300 h-2 rounded-full" style="width: 70%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Hardware & MCU -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors fade-in-up delay-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 mr-4">
+                            <i class="fas fa-microchip text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">MCU & FPGA</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Renesas RH850 (Automotive)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Nordic nRF52 Series</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> STM32 / NXP Series</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Xilinx FPGA (VHDL/Verilog)</li>
+                    </ul>
+                </div>
+
+                <!-- Domain Knowledge -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition-colors fade-in-up delay-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center text-green-400 mr-4">
+                            <i class="fas fa-cogs text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Core Competencies</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">ISO 26262</span>
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">MISRA-C</span>
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">Signal Processing</span>
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">Wireless (BLE/UWB)</span>
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">Schematic Review</span>
+                        <span class="bg-slate-700 text-xs px-3 py-1 rounded-full text-blue-200 border border-slate-600">ANSYS medini</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-800/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center fade-in-up">Professional Experience</h2>
+            
+            <div class="relative border-l border-slate-700 ml-4 space-y-12">
+                
+                <!-- Experience 1: Samhyun -->
+                <div class="relative pl-8 fade-in-up">
+                    <span class="absolute -left-3 top-0 w-6 h-6 bg-blue-600 rounded-full border-4 border-slate-900"></span>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-lg">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">㈜삼현</h3>
+                                <p class="text-blue-400 font-medium">책임 연구원 / 전자제어1팀</p>
+                            </div>
+                            <span class="text-slate-400 text-sm mt-2 md:mt-0">2025.02 - Present</span>
+                        </div>
+                        <p class="text-slate-300 mb-4 italic">eCOMP 인버터 제어 BSW 개발 및 ISO 26262 기능 안전 대응</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                            <li><strong class="text-white">RH850/F1KM 기반 BSW 개발:</strong> MCAL/Service Layer (LIN, PWM, ADC, NvM) 구현 및 최적화</li>
+                            <li><strong class="text-white">기능 안전(Functional Safety) 구현:</strong> FSM(Functional Safety Management) 모듈 개발 (Self-Test, 고장 진단 로직)</li>
+                            <li><strong class="text-white">SW 품질 확보:</strong> MISRA-C Rule 준수 정적 분석 수행 및 A-SPICE 산출물 작성 주도</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2: SPS -->
+                <div class="relative pl-8 fade-in-up">
+                    <span class="absolute -left-3 top-0 w-6 h-6 bg-slate-600 rounded-full border-4 border-slate-900"></span>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-lg">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">㈜에스피에스</h3>
+                                <p class="text-blue-400 font-medium">팀장 / 모바일사업부</p>
+                            </div>
+                            <span class="text-slate-400 text-sm mt-2 md:mt-0">2020.01 - 2025.02</span>
+                        </div>
+                        <p class="text-slate-300 mb-4 italic">BLE 리더기 FW/HW 개발 및 무선통신 시스템 설계 총괄</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                            <li><strong class="text-white">FW 아키텍처 설계:</strong> Main MCU와 바코드/RFID 모듈 간 시리얼 통신 제어 로직 구현</li>
+                            <li><strong class="text-white">연결성(Connectivity) 극대화:</strong> BLE 칩셋 연동 무선 인터페이스 및 Android/iOS 호환 USB 프로토콜 개발</li>
+                            <li><strong class="text-white">제품 양산 주도:</strong> 회로 설계 검토(Schematic Review), 펌웨어 최적화 및 KC/CE/FCC 인증 완료</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-up">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 inline-block w-full">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-white">동아대학교 대학원</h3>
+                    <p class="text-blue-400">전자공학 박사 (Ph.D.)</p>
+                    <p class="text-slate-500 text-sm">2011.03 - 2019.02</p>
+                    <p class="text-slate-400 mt-2 text-sm">통신 신호처리, MIMO, UWB 이론 심화 연구</p>
+                </div>
+                <div class="border-t border-slate-700 pt-6">
+                    <h3 class="text-xl font-bold text-white">동아대학교</h3>
+                    <p class="text-slate-400">전자공학과 학사</p>
+                    <p class="text-slate-500 text-sm">2004.03 - 2011.02</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="bg-slate-950 py-16 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Ready to Launch</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+                이노스페이스의 비전에 기여할 준비가 되어 있습니다.<br>
+                자세한 이력서나 포트폴리오 논의가 필요하시다면 언제든 연락 주십시오.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-10">
+                <a href="mailto:kiyoubu@gmail.com" class="flex items-center gap-3 bg-slate-800 px-6 py-3 rounded-full hover:bg-slate-700 transition-colors border border-slate-700">
+                    <i class="fas fa-envelope text-blue-500"></i>
+                    <span class="text-slate-300">kiyoubu@gmail.com</span>
+                </a>
+                <a href="tel:010-8901-5990" class="flex items-center gap-3 bg-slate-800 px-6 py-3 rounded-full hover:bg-slate-700 transition-colors border border-slate-700">
+                    <i class="fas fa-phone text-blue-500"></i>
+                    <span class="text-slate-300">010-8901-5990</span>
+                </a>
+            </div>
+            
+            <p class="text-slate-600 text-sm">
+                &copy; 2025 Kim Young-beom. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Simple Scroll Animation Script -->
+    <script>
+        // Intersection Observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
